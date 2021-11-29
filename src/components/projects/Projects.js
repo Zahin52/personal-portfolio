@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Row } from 'react-bootstrap'
 import ProjectCard from './ProjectsCard'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Projects() {
    const Project = [
@@ -8,23 +10,37 @@ export default function Projects() {
          name: 'shadeHouse',
          details: 'sell sun glass and various shades',
          image: '/images/shadehouse.png',
+         entry: 'fade-down-right',
       },
 
       {
          name: 'Destino',
          details: 'sell travel package',
          image: '/images/Destino.png',
+         entry: 'fade-up',
       },
       {
          name: 'Gentle care',
          details: 'Health care',
          image: '/images/gentleCare.png',
+         entry: 'fade-down-left',
       },
    ]
+   useEffect(() => {
+      AOS.init()
+   }, [])
    return (
       <div className="" style={{ margin: '10em 0 5em 0' }}>
          <div className="d-flex justify-content-center align-items-center">
-            <h3 className="text-capitalize fs-1" style={{ fontWeight: '600' }}>
+            <h3
+               data-aos="fade-down"
+               data-aos-offset="80"
+               data-aos-delay="5"
+               data-aos-duration="500"
+               data-aos-easing="ease-in"
+               className="text-capitalize fs-1"
+               style={{ fontWeight: '600' }}
+            >
                Explore My Projects
             </h3>
          </div>
