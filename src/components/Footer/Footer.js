@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Footer() {
+   
    return (
       <div className="p-5 bg-dark text-white">
          <div className="row justify-content-between">
