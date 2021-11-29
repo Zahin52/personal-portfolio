@@ -4,7 +4,7 @@ import './Banner.css'
 
 export default function Banner() {
    return (
-      <div className="vh-100 banner" style={{ background: '#f9f9ff' }}>
+      <div className=" banner" style={{ background: '#f9f9ff' }}>
          <div className=" p-0 m-0 row justify-content-center align-items-center">
             <div className="col-md-6 col-12 p-0 m-0">
                <div className="col-sm-8 col-12 mx-auto me-md-0 ms-md-auto p-md-0 p-3">

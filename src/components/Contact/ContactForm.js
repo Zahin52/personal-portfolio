@@ -12,23 +12,19 @@ export default function ContactForm() {
             <div className="col-md-8 col-12">
                <Form>
                   <Row className="g-2">
-                     <Col md>
-                        <FloatingLabel
-                           controlId="floatingInput"
-                           label="Email address"
-                           className="mb-3"
-                        >
+                     <Col md className="mb-3">
+                        <FloatingLabel controlId="floatingInput" label="Name">
                            <Form.Control type="text" placeholder="ex: zahin" />
                         </FloatingLabel>
                      </Col>
-                     <Col md>
+                     <Col md className="mb-3">
                         <FloatingLabel
                            controlId="floatingPassword"
-                           label="Password"
+                           label="Mobile"
                         >
                            <Form.Control
-                              type="password"
-                              placeholder="Password"
+                              type="text"
+                              placeholder="ex: +880144.."
                            />
                         </FloatingLabel>
                      </Col>

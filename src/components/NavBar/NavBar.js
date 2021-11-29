@@ -11,7 +11,7 @@ import {
 
 export default function NavBar() {
    return (
-      <Navbar className="bg-white" expand="lg" sticky="top">
+      <Navbar className="bg-white mt-3" expand="lg" sticky="top">
          <Container fluid className="mx-5">
             <Navbar.Brand className="fw-bold fs-3 d-flex just" href="#">
                <img
@@ -34,7 +34,6 @@ export default function NavBar() {
                   <Nav.Link href="#home">Home</Nav.Link>
                   <Nav.Link href="#projects">Projects</Nav.Link>
                   <Nav.Link href="#contact">Contact</Nav.Link>
-                  
                </Nav>
             </Navbar.Collapse>
          </Container>
