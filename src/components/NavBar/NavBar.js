@@ -20,7 +20,9 @@ export default function NavBar() {
                   src="/images/image.png"
                   alt="logo"
                />
-               <span style={{ color: '#000',marginLeft:"-25px" }}>ZAHIN UDDIN</span>
+               <span style={{ color: '#000', marginLeft: '-25px' }}>
+                  ZAHIN UDDIN
+               </span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -29,10 +31,10 @@ export default function NavBar() {
                   style={{ maxHeight: '200px' }}
                   navbarScroll
                >
-                  <Nav.Link href="#">Home</Nav.Link>
-                  <Nav.Link href="#">Projects</Nav.Link>
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Contact</Nav.Link>
+                  <Nav.Link href="#home">Home</Nav.Link>
+                  <Nav.Link href="#projects">Projects</Nav.Link>
+                  <Nav.Link href="#contact">Contact</Nav.Link>
+                  
                </Nav>
             </Navbar.Collapse>
          </Container>
