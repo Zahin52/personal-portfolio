@@ -1,14 +1,6 @@
 import React from 'react'
-import {
-   Button,
-   Container,
-   Form,
-   FormControl,
-   Nav,
-   Navbar,
-   NavDropdown,
-} from 'react-bootstrap'
-import { Link, NavLink } from 'react-router-dom'
+import { Container, Nav, Navbar } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import { NavHashLink } from 'react-router-hash-link'
 
 export default function NavBar() {
