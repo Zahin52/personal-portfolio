@@ -22,12 +22,12 @@ export default function ProjectsCard({ info }) {
          <Card>
             <Card.Img variant="top" src={image} />
             <Card.Body>
-               <Card.Title>{name}</Card.Title>
-               <Card.Text>{details}</Card.Text>
+               <Card.Title className="text-uppercase">{name}</Card.Title>
+               <Card.Text className="text-secondary">{details}</Card.Text>
             </Card.Body>
             <Card.Footer>
                <Link to={`/projects/${name}`}>
-                  <button>Details</button>
+                  <button>See Details</button>
                </Link>
             </Card.Footer>
          </Card>

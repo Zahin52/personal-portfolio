@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "./AboutMe.css"
+import './AboutMe.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -18,8 +18,8 @@ export default function AboutMe() {
             >
                <div className="d-flex justify-content-center align-items-center ">
                   <img
-                     className="img-fluid col-8 mx-auto border rounded-circle"
-                     src="/images/meWithkid.jpg"
+                     className="img-fluid col-10 mx-auto  rounded-circle"
+                     src="/images/photo.jpg"
                      alt="my standing"
                   />
                </div>
@@ -29,7 +29,6 @@ export default function AboutMe() {
                data-aos-easing="linear"
                data-aos-duration="500"
                className="col-lg-7 col-12 aboutMe"
-               
             >
                <div>
                   <p className="text-danger my-2">Who am I ?</p>
@@ -42,13 +41,14 @@ export default function AboutMe() {
                         textAlign: 'justify',
                      }}
                   >
-                     I am a final-year undergraduate student at the University
-                     of Chittagong studying Computer Science and Engineering. As
-                     a C.S.E student, I had the opportunity to investigate a
-                     wide range of fascinating elements of computer science.
-                     <br />I have most loved web development and am looking for
-                     possibilities to contribute my abilities to the growth of a
-                     company and an atmosphere that will allow me to grow and
+                     I am a final-year undergraduate student studying Computer
+                     Science and Engineering at the University of Chittagong. As
+                     a C.S.E student, I was able to examine a wide range of
+                     exciting computer science aspects.
+                     <br />
+                     I've always enjoyed web development and am searching for
+                     opportunities to contribute my skills to a company's growth
+                     as well as an environment that will allow me to grow and
                      learn every day.
                   </p>
                </div>
@@ -56,21 +56,21 @@ export default function AboutMe() {
                <div className="d-md-flex justify-content-between">
                   <div>
                      <div className="d-flex">
-                        <span className="me-2 fw-bold">Name</span>
+                        <span className="me-2 fw-bold">Name : </span>
                         <p>Md. Zahin Uddin</p>
                      </div>
                      <div className="d-flex">
-                        <span className="me-2 fw-bold">Age</span>
+                        <span className="me-2 fw-bold">Age : </span>
                         <p>24</p>
                      </div>
                   </div>
                   <div>
                      <div className="d-flex">
-                        <span className="me-2 fw-bold">Email</span>
+                        <span className="me-2 fw-bold">Email : </span>
                         <p>zahinuddin5@gmail.com</p>
                      </div>
                      <div className="d-flex">
-                        <span className="me-2 fw-bold">From</span>
+                        <span className="me-2 fw-bold">From : </span>
                         <p>Dhaka, Bangladesh</p>
                      </div>
                   </div>

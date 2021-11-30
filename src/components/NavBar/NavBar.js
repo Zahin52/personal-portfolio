@@ -1,23 +1,25 @@
 import React from 'react'
+import './nav.css'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { NavHashLink } from 'react-router-hash-link'
 
 export default function NavBar() {
    return (
-      <Navbar className="bg-white mt-3" expand="lg" sticky="top">
+      <Navbar className="bg-white mt-3 " expand="lg" sticky="top">
          <Container fluid className="mx-2 mx-md-5">
             <Navbar.Brand className="fw-bold fs-3 d-flex " href="#">
                <img
-                  className="img-fluid"
-                  style={{ width: '2em' }}
-                  src="/images/image.png"
+                  className="img-fluid rounded-circle"
+                  style={{ width: '1.3em' }}
+                  src="/images/logo.png"
                   alt="logo"
                />
                <span
                   style={{
-                     color: '#000',
-                     marginLeft: '-25px',
+                     fontSize: '1.6rem',
+                     color: 'rgb(108, 117, 125)',
+                     
                   }}
                >
                   ZAHIN UDDIN
@@ -26,7 +28,7 @@ export default function NavBar() {
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                <Nav
-                  className="ms-auto my-2 my-lg-0"
+                  className="ms-auto my-2 my-lg-0 nav"
                   style={{ maxHeight: '200px' }}
                   navbarScroll
                >
@@ -50,7 +52,10 @@ export default function NavBar() {
                      as={NavHashLink}
                      smooth
                      scroll={(el) =>
-                        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                        el.scrollIntoView({
+                           behavior: 'smooth',
+                           block: 'center',
+                        })
                      }
                      to="/#aboutme"
                   >

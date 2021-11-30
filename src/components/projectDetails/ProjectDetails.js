@@ -6,20 +6,20 @@ export default function ProjectDetails() {
    const Project = [
       {
          name: 'shadeHouse',
-         details: 'sell sun glass and various shades',
+         details: 'A best Sunglass shop online',
          bulletPoint: [
-            'Sunglass selling website',
-            'Users can Order product',
-            'Users can Cancle their orders',
+            'A Sunglass selling website',
+            'Users can order product',
+            'Users can cancle their orders',
             'Google and Email authentication needed to get some extra privilage',
             'If you are an admin you can make an admin',
-            'Admin users can mange orders',
+            'Admin users can manage all orders',
             'Normal users can give review',
          ],
          screenShots: [
-            '/images/projects/shadehouse/1.png',
-            '/images/projects/shadehouse/2.png',
-            '/images/projects/shadehouse/3.png',
+            '/images/projects/shadehouse/01.png',
+            '/images/projects/shadehouse/02.png',
+            '/images/projects/shadehouse/03.png',
          ],
          liveSite: 'https://shadehouse-d69c2.firebaseapp.com/',
          FrontEnd:
@@ -32,20 +32,18 @@ export default function ProjectDetails() {
 
       {
          name: 'Destino',
-         details: 'sell travel package',
+         details: 'A best Travel and tourism website',
          bulletPoint: [
-            'Sunglass selling website',
-            'Users can Order product',
-            'Users can Cancle their orders',
-            'Google and Email authentication needed to get some extra privilage',
-            'If you are an admin you can make an admin',
-            'Admin users can mange orders',
-            'Normal users can give review',
+            "It's a Travel & Tourism website",
+            'Users can book a place where they want to travel',
+            'Users can cancle their Bookings',
+            'Google and Email authentication needed to get special privilage',
+            'User also can add a destination they want to go',
          ],
          screenShots: [
-            '/images/projects/destino/1.png',
-            '/images/projects/destino/2.png',
-            '/images/projects/destino/3.png',
+            '/images/projects/destino/01.png',
+            '/images/projects/destino/02.png',
+            '/images/projects/destino/03.png',
          ],
          liveSite: 'https://destino-7072b.web.app/',
          FrontEnd:
@@ -56,20 +54,18 @@ export default function ProjectDetails() {
       },
       {
          name: 'Gentle-care',
-         details: 'Health care',
+         details: 'A Health care website',
          bulletPoint: [
-            'We sell high quality sunglasses',
-            'Users can Order product',
-            'Users can Cancle their orders',
+            'A Health care related website',
+            'User can see the test type and details',
             'Google and Email authentication needed to get some extra privilage',
-            'If you are an admin you can make an admin',
-            'Admin users can manage all orders',
-            'Normal users can give review',
+            'After login user can fix an appointment',
+            'After login user also can give feedback',
          ],
          screenShots: [
-            '/images/projects/shadehouse/1.png',
-            '/images/projects/shadehouse/2.png',
-            '/images/projects/shadehouse/3.png',
+            '/images/projects/gentleCare/1.png',
+            '/images/projects/gentleCare/2.png',
+            '/images/projects/gentleCare/3.png',
          ],
          liveSite: 'https://gentle-care.web.app/',
          FrontEnd:
@@ -84,12 +80,18 @@ export default function ProjectDetails() {
    console.log(displayItem)
 
    return (
-      <div className="container text-secondary p-5">
+      <div className="container text-secondary py-4">
          <h1 className="my-3">{displayItem.name}</h1>
          <div className="link-button">
-            <button className="ms-0 m-2">Live Site</button>
-            <button className="ms-0 m-2">Front-End Code</button>
-            <button className="ms-0 me-0 m-2">Back-End Code</button>
+            <a target="_blank" rel="noreferrer" href={displayItem.liveSite}>
+               <button className="ms-0 m-2">Live Site</button>
+            </a>
+            <a target="_blank" rel="noreferrer" href={displayItem.FrontEnd}>
+               <button className="ms-0 m-2">Front-End Code</button>
+            </a>
+            <a target="_blank" rel="noreferrer" href={displayItem.BackEnd}>
+               <button className="ms-0 me-0 m-2">Back-End Code</button>
+            </a>
          </div>
          <div className="d-md-flex">
             <Carousel variant="dark" className="col-lg-6 col-12">

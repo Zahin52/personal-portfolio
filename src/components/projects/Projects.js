@@ -8,7 +8,7 @@ export default function Projects() {
    const Project = [
       {
          name: 'shadeHouse',
-         details: 'sell sun glass and various shades',
+         details: 'A best Sunglass shop online',
          FrontEnd:
             'https://github.com/Zahin52/shadehouse/tree/main/shadehouse%20client',
          BackEnd:
@@ -19,7 +19,7 @@ export default function Projects() {
 
       {
          name: 'Destino',
-         details: 'sell travel package',
+         details: 'A best Travel and tourism website',
          FrontEnd:
             'https://github.com/Zahin52/Destino/tree/main/Destino-client',
          BackEnd: 'https://github.com/Zahin52/Destino/tree/main/Destino-server',
@@ -28,7 +28,7 @@ export default function Projects() {
       },
       {
          name: 'Gentle-care',
-         details: 'Health care',
+         details: 'A Health care website',
          FrontEnd:
             'https://github.com/Zahin52/gentle-care/tree/main/gentle-care',
          BackEnd: '',

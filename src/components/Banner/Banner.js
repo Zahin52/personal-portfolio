@@ -22,12 +22,12 @@ export default function Banner() {
                      THIS IS ME
                   </small>
                   <h3
-                     className="my-0"
+                     className="my-0 "
                      style={{
-                        fontSize: '3rem',
-                        fontWeight: '600',
-                        color: 'rgb(34, 34, 34)',
-                        letterSpacing: '1px',
+                        'fontSize': '3em',
+                        'fontWeight': '600',
+                        'color': 'rgb(34, 34, 34)',
+                        'letterSpacing': '1px',
                      }}
                   >
                      MD. ZAHIN UDDIN
