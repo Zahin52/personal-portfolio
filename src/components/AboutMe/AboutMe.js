@@ -8,12 +8,14 @@ export default function AboutMe() {
       AOS.init()
    }, [])
    return (
-      <div className="" style={{ margin: '10rem 0 12rem 0' }}>
+      <div className="" style={{ margin: '12rem 0 12rem 0' }}>
          <div className="row g-4 justify-content-center align-items-center">
             <div
                data-aos="fade-left"
-               data-aos-easing="linear"
-               data-aos-duration="800"
+               data-aos-offset="80"
+               data-aos-delay="10"
+               data-aos-duration="500"
+               data-aos-easing="ease-in"
                className="col-lg-5 col-12"
             >
                <div className="d-flex justify-content-center align-items-center ">
@@ -25,9 +27,11 @@ export default function AboutMe() {
                </div>
             </div>
             <div
-               data-aos="fade-up-right"
-               data-aos-easing="linear"
-               data-aos-duration="800"
+               data-aos="fade-right"
+               data-aos-offset="150"
+               data-aos-delay="10"
+               data-aos-duration="500"
+               data-aos-easing="ease-in"
                className="col-lg-7 col-12 aboutMe"
             >
                <div>
