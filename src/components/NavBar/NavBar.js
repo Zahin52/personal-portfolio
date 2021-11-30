@@ -30,11 +30,8 @@ export default function NavBar() {
                   style={{ maxHeight: '200px' }}
                   navbarScroll
                >
-                  <Nav.Link as={NavHashLink} to="/#top">
+                  <Nav.Link as={NavHashLink} to="/#">
                      Home
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/blog">
-                     Blog
                   </Nav.Link>
                   <Nav.Link
                      as={NavHashLink}
@@ -46,6 +43,20 @@ export default function NavBar() {
                   >
                      Projects
                   </Nav.Link>
+                  <Nav.Link as={NavLink} to="/blog">
+                     Blog
+                  </Nav.Link>
+                  <Nav.Link
+                     as={NavHashLink}
+                     smooth
+                     scroll={(el) =>
+                        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                     }
+                     to="/#aboutme"
+                  >
+                     About Me
+                  </Nav.Link>
+
                   <Nav.Link
                      as={NavHashLink}
                      smooth

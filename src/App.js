@@ -1,4 +1,3 @@
-
 import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -6,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './components/NavBar/NavBar'
 import Main from './components/Main/Main'
 import Blog from './components/blog/Blog'
+import ProjectDetails from './components/projectDetails/ProjectDetails'
 
 function App() {
    return (
@@ -19,6 +19,9 @@ function App() {
                   </Route>
                   <Route exact path="/blog">
                      <Blog />
+                  </Route>
+                  <Route exact path="/projects/:name">
+                     <ProjectDetails />
                   </Route>
                </Switch>
             </Router>

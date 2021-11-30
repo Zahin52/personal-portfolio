@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react'
 import './Banner.css'
 import AOS from 'aos'
@@ -23,7 +22,7 @@ export default function Banner() {
                      THIS IS ME
                   </small>
                   <h3
-                     className="my-4"
+                     className="my-0"
                      style={{
                         fontSize: '3rem',
                         fontWeight: '600',
@@ -31,35 +30,39 @@ export default function Banner() {
                         letterSpacing: '1px',
                      }}
                   >
-                     <Typewriter
-                        options={{
-                           autoStart: true,
-                        }}
-                        onInit={(typewriter) => {
-                           typewriter
-                              .pauseFor(400)
-                              .typeString('MD. zahin')
-                              .pauseFor(300)
-                              .deleteChars(5)
-                              .typeString('ZAHIN ')
-                              .typeString('UDDIN')
-                              .pauseFor(1000)
-                              .start()
-                        }}
-                     />
+                     MD. ZAHIN UDDIN
                   </h3>
-                  <p
+                  <h4
                      className=""
                      style={{
                         lineHeight: '1.625em',
                         color: '#777',
-                        fontSize: '1.2rem',
+                        // fontSize: '1.2rem',
                         fontWeight: '400',
                      }}
                   >
-                     Full Stack Developer
-                     <wbr /> || React Developer <wbr /> || MERN Developer
-                  </p>
+                     <Typewriter
+                        options={{
+                           autoStart: true,
+                           loop: true,
+                        }}
+                        onInit={(typewriter) => {
+                           typewriter
+                              .pauseFor(400)
+                              .typeString('Full Stack Web Developer')
+                              .pauseFor(300)
+                              .deleteAll()
+                              .typeString('React Developer')
+                              .deleteAll()
+                              .typeString('MERN Stack Developer')
+                              .deleteAll()
+                              .typeString('Web Designer')
+                              .pauseFor(1000)
+                              .deleteAll()
+                              .start()
+                        }}
+                     />
+                  </h4>
                   {/* <a
                      className="me-2"
                      download
@@ -83,8 +86,8 @@ export default function Banner() {
                <div className="col-sm-9 col-12 mx-auto ">
                   <img
                      data-aos="fade-up"
-                     className="img-fluid mx-auto"
-                     src="/images/me.png"
+                     className="img-fluid mx-auto rounded-circle"
+                     src="/images/colorMe.jpg"
                      alt="mee"
                   />
                </div>

@@ -9,6 +9,10 @@ export default function Projects() {
       {
          name: 'shadeHouse',
          details: 'sell sun glass and various shades',
+         FrontEnd:
+            'https://github.com/Zahin52/shadehouse/tree/main/shadehouse%20client',
+         BackEnd:
+            'https://github.com/Zahin52/shadehouse/tree/main/shadehouse%20server',
          image: '/images/shadehouse.png',
          entry: 'fade-down-right',
       },
@@ -16,12 +20,18 @@ export default function Projects() {
       {
          name: 'Destino',
          details: 'sell travel package',
+         FrontEnd:
+            'https://github.com/Zahin52/Destino/tree/main/Destino-client',
+         BackEnd: 'https://github.com/Zahin52/Destino/tree/main/Destino-server',
          image: '/images/Destino.png',
          entry: 'fade-up',
       },
       {
-         name: 'Gentle care',
+         name: 'Gentle-care',
          details: 'Health care',
+         FrontEnd:
+            'https://github.com/Zahin52/gentle-care/tree/main/gentle-care',
+         BackEnd: '',
          image: '/images/gentleCare.png',
          entry: 'fade-down-left',
       },

@@ -3,6 +3,7 @@ import { Card, Col } from 'react-bootstrap'
 import './card.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 export default function ProjectsCard({ info }) {
    const { name, details, image, entry } = info
@@ -25,7 +26,9 @@ export default function ProjectsCard({ info }) {
                <Card.Text>{details}</Card.Text>
             </Card.Body>
             <Card.Footer>
-               <button>Details</button>
+               <Link to={`/projects/${name}`}>
+                  <button>Details</button>
+               </Link>
             </Card.Footer>
          </Card>
       </Col>

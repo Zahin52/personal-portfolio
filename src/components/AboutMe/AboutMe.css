@@ -1,0 +1,8 @@
+.aboutMe{
+    padding: 2rem 12rem 2rem 4rem;
+}
+@media (max-width: 800px) {
+    .aboutMe{
+    padding: 1.3rem 3rem;
+}
+}
