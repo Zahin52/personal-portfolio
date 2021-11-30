@@ -16,10 +16,10 @@ export default function Blog() {
                onInit={(typewriter) => {
                   typewriter
                      .pauseFor(400)
-                     .typeString('Blog is coming soon!')
+                     .typeString('I\'m still working on this part')
                      .pauseFor(300)
                      .deleteAll()
-                     .typeString('Thanks for visiting my site')
+                     .typeString('Blog is coming soon....')
                      .pauseFor(1000)
                      .start()
                }}
