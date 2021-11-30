@@ -14,9 +14,9 @@ export default function ProjectsCard({ info }) {
       <Col
          className="cards"
          data-aos={entry}
-         data-aos-offset="80"
-         data-aos-delay="5"
-         data-aos-duration="500"
+         data-aos-offset="200"
+         data-aos-delay="80"
+         data-aos-duration="700"
          data-aos-easing="ease-in"
       >
          <Card>

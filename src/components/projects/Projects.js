@@ -44,9 +44,9 @@ export default function Projects() {
          <div className="d-flex justify-content-center align-items-center">
             <h3
                data-aos="fade-down"
-               data-aos-offset="80"
-               data-aos-delay="5"
-               data-aos-duration="500"
+               data-aos-offset="300"
+               data-aos-delay="20"
+               data-aos-duration="700"
                data-aos-easing="ease-in"
                className="text-capitalize fs-1"
                style={{ fontWeight: '600' }}

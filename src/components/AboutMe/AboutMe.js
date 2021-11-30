@@ -13,7 +13,7 @@ export default function AboutMe() {
             <div
                data-aos="fade-left"
                data-aos-easing="linear"
-               data-aos-duration="500"
+               data-aos-duration="800"
                className="col-lg-5 col-12"
             >
                <div className="d-flex justify-content-center align-items-center ">
@@ -25,9 +25,9 @@ export default function AboutMe() {
                </div>
             </div>
             <div
-               data-aos="fade-right"
+               data-aos="fade-up-right"
                data-aos-easing="linear"
-               data-aos-duration="500"
+               data-aos-duration="800"
                className="col-lg-7 col-12 aboutMe"
             >
                <div>
