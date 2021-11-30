@@ -4,8 +4,15 @@ import emailjs from 'emailjs-com'
 import './contactForm.css'
 
 export default function ContactForm() {
-    const [FormData, setFormData] = useState({})
-    const form=useRef()
+   const [FormData, setFormData] = useState({
+      name: '',
+      email: '',
+      mobile: '',
+      comment: '',
+   })
+   const [SuccShow, setSuccShow] = useState(false)
+   const [errorShow, seterrorShow] = useState(false)
+   const form = useRef()
    const FormHandle = (e) => {
       const name = e.target.name
       const val = e.target.value
@@ -17,6 +24,15 @@ export default function ContactForm() {
    const submitForm = (e) => {
       e.preventDefault()
 
+      const flag = Object.values(FormData).filter((item) => item.length === 0)
+      console.log(FormData, form.current, flag)
+      if (flag.length !== 0) {
+         seterrorShow(true)
+
+         return setTimeout(() => {
+            seterrorShow(false)
+         }, 5000)
+      }
       emailjs
          .sendForm(
             'gmail',
@@ -27,11 +43,26 @@ export default function ContactForm() {
          .then(
             (result) => {
                console.log(result.text)
+               setSuccShow(true)
+               setFormData({
+                  name: '',
+                  email: '',
+                  mobile: '',
+                  comment: '',
+               })
+               setTimeout(() => {
+                  setSuccShow(false)
+               }, 5000)
             },
             (error) => {
                console.log(error.text)
+               seterrorShow(true)
+               setTimeout(() => {
+                  seterrorShow(false)
+               }, 5000)
             },
          )
+      e.target.reset()
    }
    return (
       <div className="my-5">
@@ -91,6 +122,16 @@ export default function ContactForm() {
                      <button className="text-capilize">Send</button>
                   </div>
                </Form>
+               {SuccShow && (
+                  <div className="alert alert-success" role="alert">
+                     Submitted Succesfully, Will contact you soon!
+                  </div>
+               )}
+               {errorShow && (
+                  <div className="alert alert-danger" role="alert">
+                     Please fill all the fields or check your inputs!
+                  </div>
+               )}
             </div>
          </div>
       </div>
