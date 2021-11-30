@@ -89,9 +89,9 @@ export default function ProjectDetails() {
             <a target="_blank" rel="noreferrer" href={displayItem.FrontEnd}>
                <button className="ms-0 m-2">Front-End Code</button>
             </a>
-            <a target="_blank" rel="noreferrer" href={displayItem.BackEnd}>
+            {displayItem.BackEnd && <a target="_blank" rel="noreferrer" href={displayItem.BackEnd}>
                <button className="ms-0 me-0 m-2">Back-End Code</button>
-            </a>
+            </a>}
          </div>
          <div className="d-md-flex">
             <Carousel variant="dark" className="col-lg-6 col-12">
