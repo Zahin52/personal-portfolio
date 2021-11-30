@@ -10,20 +10,24 @@ import ProjectDetails from './components/projectDetails/ProjectDetails'
 function App() {
    return (
       <div className="App">
-         <Router>
-            <NavBar />
-            <Switch>
-               <Route exact path="/">
-                  <Main />
-               </Route>
-               <Route exact path="/blog">
-                  <Blog />
-               </Route>
-               <Route exact path="/projects/:name">
-                  <ProjectDetails />
-               </Route>
-            </Switch>
-         </Router>
+         <div>
+            <Router>
+               <NavBar />
+               <div style={{ overflowX: 'hidden' }}>
+                  <Switch>
+                     <Route exact path="/">
+                        <Main />
+                     </Route>
+                     <Route exact path="/blog">
+                        <Blog />
+                     </Route>
+                     <Route exact path="/projects/:name">
+                        <ProjectDetails />
+                     </Route>
+                  </Switch>
+               </div>
+            </Router>
+         </div>
       </div>
    )
 }
