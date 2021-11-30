@@ -10,22 +10,20 @@ import ProjectDetails from './components/projectDetails/ProjectDetails'
 function App() {
    return (
       <div className="App">
-         <main>
-            <Router>
-               <NavBar />
-               <Switch>
-                  <Route exact path="/">
-                     <Main />
-                  </Route>
-                  <Route exact path="/blog">
-                     <Blog />
-                  </Route>
-                  <Route exact path="/projects/:name">
-                     <ProjectDetails />
-                  </Route>
-               </Switch>
-            </Router>
-         </main>
+         <Router>
+            <NavBar />
+            <Switch>
+               <Route exact path="/">
+                  <Main />
+               </Route>
+               <Route exact path="/blog">
+                  <Blog />
+               </Route>
+               <Route exact path="/projects/:name">
+                  <ProjectDetails />
+               </Route>
+            </Switch>
+         </Router>
       </div>
    )
 }

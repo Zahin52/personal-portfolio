@@ -6,7 +6,7 @@ import { NavHashLink } from 'react-router-hash-link'
 
 export default function NavBar() {
    return (
-      <Navbar className="bg-white mt-3 " expand="lg" sticky="top">
+      <Navbar className="bg-white mt-3 py-3" expand="lg" sticky="top">
          <Container fluid className="mx-2 mx-md-5">
             <Navbar.Brand className="fw-bold fs-3 d-flex " href="#">
                <img
@@ -39,7 +39,7 @@ export default function NavBar() {
                      as={NavHashLink}
                      smooth
                      scroll={(el) =>
-                        el.scrollIntoView({ behavior: 'smooth', block: 'end' })
+                        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
                      }
                      to="/#projects"
                   >

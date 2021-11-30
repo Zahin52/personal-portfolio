@@ -13,11 +13,11 @@ export default function ProjectsCard({ info }) {
    return (
       <Col
          className="cards"
+         style={{ overflowX: 'hidden !important' }}
          data-aos={entry}
-         data-aos-offset="200"
-         data-aos-delay="80"
-         data-aos-duration="700"
-         data-aos-easing="ease-in"
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
       >
          <Card>
             <Card.Img variant="top" src={image} />

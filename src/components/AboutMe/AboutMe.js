@@ -8,17 +8,26 @@ export default function AboutMe() {
       AOS.init()
    }, [])
    return (
-      <div className="" style={{ margin: '12rem 0 12rem 0' }}>
-         <div className="row g-4 justify-content-center align-items-center">
+      <div
+         className=""
+         style={{ margin: '12rem 0 12rem 0', overflowX: 'hidden !important' }}
+      >
+         <div
+            className="row g-4 justify-content-center align-items-center"
+            style={{ overflowX: 'hidden !important' }}
+         >
             <div
-               data-aos="fade-left"
-               data-aos-offset="80"
-               data-aos-delay="10"
-               data-aos-duration="500"
-               data-aos-easing="ease-in"
+               data-aos="fade-up"
+               data-aos-delay="50"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out"
                className="col-lg-5 col-12"
+               style={{ overflowX: 'hidden !important' }}
             >
-               <div className="d-flex justify-content-center align-items-center ">
+               <div
+                  className="d-flex justify-content-center align-items-center "
+                  style={{ overflowX: 'hidden !important' }}
+               >
                   <img
                      className="img-fluid col-10 mx-auto  rounded-circle"
                      src="/images/photo.jpg"
@@ -27,14 +36,14 @@ export default function AboutMe() {
                </div>
             </div>
             <div
-               data-aos="fade-right"
-               data-aos-offset="150"
-               data-aos-delay="10"
-               data-aos-duration="500"
-               data-aos-easing="ease-in"
+               data-aos="fade-down"
+               data-aos-delay="50"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out"
                className="col-lg-7 col-12 aboutMe"
+               style={{ overflowX: 'hidden !important' }}
             >
-               <div>
+               <div style={{ overflowX: 'hidden !important' }}>
                   <p className="text-danger my-2">Who am I ?</p>
                   <h4 className="text-uppercase">
                      I'm Md. Zahin Uddin, a full stack & MERN stack Web Devloper
